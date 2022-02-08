@@ -70,3 +70,6 @@ The package also allows for updating an existing site for theme, page templates,
 
 [Stackoverflow](http://stackoverflow.com){:target="blank"}
 [Go to this page](http://somelink.com/?target=_blank)
+[Google](https://google.com" target="_blank)
+[Link](https://example.org/ "title" target="_blank")
+<a href="https://example.org/" rel="nofollow" title="title&quot; target=&quot;_blank">Link</a>
