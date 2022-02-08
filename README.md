@@ -10,11 +10,11 @@ This package contains:
     This theme is used to update existing site header styles and theme layouts.
    
 * **Page Layouts**
-    When creating a page or new page variation, some page templates are included. For non-object and non-CMS page types, a page layout called *Template* is included to get a new page started. 
+    When creating a page or new page variation, some page templates are included. For non-object and non-CMS page types, a page layout called **Template** is included to get a new page started. 
 
 
 **Notes:**
-1. **Read the site Instructions carefully** and complete the tasks before publishing.
+1. **Read the instructions carefully** and complete the tasks before publishing. There are additional instructions and details 
 2. This package is **supplied as-is** and is not supported by Salesforce.
 3. No CMS or Knowledge content included.
 
@@ -24,8 +24,7 @@ This package contains:
 1. Enable and setup Experience Cloud on your site.
    Configure Knowledge and Salesforce CMS (as needed)
 
-2. Install the unmanaged package: 
-   Experience Cloud - Site Starter (AURA) 
+2. Install the package - Experience Cloud - Site Starter (AURA) 
 ```diff
 - ADD LINK TO PACKAGE
 ``` 
@@ -43,11 +42,10 @@ This package contains:
 
 1. Go to Experience Builder and configure the themes’: color, images, font, and theme settings.
    **Note**: CSS can change from release to release and has the potential to visually impact other components within the Experience Cloud site. 
-   
-   The site CSS listed is reviewed for each release, but is **supplied as-is**.
     
 2. Update the Site CSS Experience Builder / Theme / Edit CSS (from the pull-down menu). 
    Copy the CSS from [CSS-Site-Starter-CSS.css](./CSS-Site-Starter.css) and paste it into the sites’ CSS.
+   The site CSS is reviewed for each release, but is **supplied as-is**.
     
 3. Add to the site’s Head Markup (Experience Builder / Settings / Advanced / Edit Head Markup).
    Copy the Head Markup from [Head-Markup.html](./Head-Markup.html) and paste it into the sites’ Head Markup.
