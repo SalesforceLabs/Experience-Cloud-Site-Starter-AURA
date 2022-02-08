@@ -24,7 +24,7 @@ This package contains:
 1. Enable and setup Experience Cloud on your site.
    Configure Knowledge and Salesforce CMS (as needed)
 
-2. Install the package - [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000iqiF) v1.14
+2. Install the package - [Experience Cloud - Site Starter (AURA)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000iqtn) v1.5
     
 3. Open the **Digital Experiences** app and then open the **All Sites** tab.
 
