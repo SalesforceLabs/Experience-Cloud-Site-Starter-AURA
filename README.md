@@ -68,9 +68,4 @@ The package also allows for updating an existing site for theme, page templates,
 
 
 
-[go](http://stackoverflow.com){:target="_blank"}.
-You should also add rel="noopener"
-
-[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
-
-
+[Stackoverflow](http://stackoverflow.com){:target="_blank"}
