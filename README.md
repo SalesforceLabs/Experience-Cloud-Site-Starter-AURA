@@ -1,4 +1,4 @@
-# Experience-Cloud-GIST-Library
+# Experience-Cloud-Site-Starter-AURA
 The Experience Cloud Site Starter (AURA) is a mobile 1st site design for a self-service site using best practices (e.g., flexible pages) and no code, low code solutions (e.g., CSS and HTML).
 
 
@@ -17,7 +17,7 @@ The package contains:
 
 **Notes:**
 
-1. *Read the site Instructions carefully* and complete the tasks before publishing.
-2. This package is *supplied as-is* and is not supported by Salesforce.
+1. **Read the site Instructions carefully** and complete the tasks before publishing.
+2. This package is **supplied as-is** and is not supported by Salesforce.
 3. No CMS or Knowledge content included.
 
