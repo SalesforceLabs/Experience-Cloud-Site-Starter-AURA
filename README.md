@@ -1,7 +1,7 @@
 # Experience Cloud Site Starter (AURA)
 The Experience Cloud Site Starter (AURA) is a mobile 1st site design for a self-service site using best practices (e.g., flexible pages), using no-code, low-code,  CSS, and HTML components.
 
-<a href="https://help.salesforce.com/s/articleView?id=sf.networks_overview.htm&type=5" target="_blank">external link</a>
+<a href="https://help.salesforce.com/s/articleView?id=sf.networks_overview.htm&type=5" target="_blank" rel="noreferrer noopener">external link</a>
 
 
 
