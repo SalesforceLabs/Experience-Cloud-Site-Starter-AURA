@@ -1,0 +1,281 @@
+/*  Site CSS - See https://gist.github.com/gregejankowski/9244de7330ebcb2dca7062bbcda60ef4 for updates.
+	Latest Update: 2/7/21 */
+
+/* --- Logo Left justify. The Cypress theme allows the menu to show collaped. These setting keep the logo left justified. */
+.forceCommunityThemeNavTrigger {padding: 6px !important;}
+.forceCommunityThemeHeaderCompact .themeHeaderInner.centerAlignLogo-true .themeNavTriggerContainer {flex-grow:0 !important;}
+.forceCommunityThemeHeaderCompact .themeHeaderInner.centerAlignLogo-true .themeLogo {margin-left: 6px !important;}
+.forceCommunityThemeLogo .logoImage {background-position: left !important;}
+
+/* -------------- Font, Buttons, and Breadcrumbs -------------- */
+
+/* --- BASE FONT SIZE --- */
+html {font-size: 100%;}
+/* Tablet */
+@media only screen and (max-width: 820px) {html {font-size: 90%;}}
+/* Mobile */
+@media only screen and (max-width: 480px) {html {font-size: 80%;}}
+
+/* --- FONTS - Standard font tags with SLDS equivalents. Using rem to insure site-wide consistancy */
+H1, .slds-text-heading_large, .profileName
+{font-size: 2.2rem !important; font-weight: 400 !important;}
+
+H2, .slds-text-heading_medium, .slds-card__header-title.slds-truncate 
+{font-size: 1.6rem !important; font-weight: 400 !important;}
+
+H3, .slds-text-heading_small, .slds-text-heading--small, .baseCard__header-title-container, .selfServiceArticleListItem .article-head
+{font-size: 1.3rem !important; font-weight: 400 !important;}
+
+p, .slds-text-body_regular, .siteforceThemeLayoutStarter, .slds-text-heading_x-small, .forceCommunityTopArticleItem .article-title 
+{font-size: 1.0rem !important; font-weight: 400 !important;}
+
+/* --- FONTS - Other common SLDS fonts used on the site */
+.slds-text-body_small {font-size: .9rem !important;}
+.slds-text-title {font-size: .9rem !important;}
+.slds-text-title_caps {font-size: .9rem !important;}
+.slds-text-title_bold {font-size: .9rem !important;}
+
+/* --- FONTS/LINKS - Remove all underlines from links */
+a:link, a:visited, a:hover, a:active 
+{text-decoration: none !important;}
+
+/* --- Branding tokens for Experience Cloud, see https://developer.salesforce.com/docs/atlas.en-us.communities_dev.meta/communities_dev/communities_dev_customize_tokens.htm */
+.brand-color {color: var(--colorBrand) !important;}
+.brand-text {color: var(--colorTextBrand) !important;}
+.brand-text-default {color: var(--colorTextDefault) !important;}
+.brand-text-link {color: var(--colorTextLink) !important;}
+.brand-text-weak {color: var(--colorTextWeak) !important;}
+
+/* --- Buttons and Breadcrumbs */
+/* Ask a Question  */ 
+.askCommunityBtn {font-size: 1rem !important; margin: auto !important; width:230px !important;}
+/* Contact Support */
+.selfServiceContactSupport {font-size: 1rem !important; margin: auto !important; width:230px !important;}
+/* Contact Support */ 
+.contactSupportButton {font-size: 1rem !important; margin: auto !important; width:230px !important;}
+/* Contact Us Button */ 
+.contactRequestButton {font-size: 1rem !important; margin: auto !important; width:230px !important;}
+/* Ask & Contact Us */   
+.cta_header {font-size: 1.3rem !important; font-weight: 400 !important; margin-bottom: -6px;} 
+/* @media only screen and (min-width: 48em) {.siteforceNapiliFooter .cta-btn {margin: auto !important;}} */
+
+/* Follow Button */
+.forceCommunityFollow .button {font-size: 1rem !important; width:230px !important;}    
+.forceCommunityFollow.group {justify-content:center; width:230px !important;}
+.forceCommunityFollow.group.twoButton {width: 230px !important;}
+
+/* Breadcrumbs */ 
+.breadcrumb-style {font-size:.9rem;  margin-bottom:-36px; margin-top:6px;}
+
+/* Button (HTML) Styling */
+.button-style {font-size:1rem; height:42px; border-radius:5px; width:230px;}
+/* Mobile */ @media only screen and (max-width: 480px) {html .button-style {font-size:1rem; height:36px; border-radius:5px; width:230px;}}
+
+/* -------------- Card Formatting -------------- */
+
+/* --- Common CSS for background and border update to site components */
+.component-border,
+    .selfServiceArticleLayout .content							/* Article Detail */,  
+	.forceCommunityCmsContentItemDetailLayout                	/* CMS Connect Detail */,
+	.forceChatterCompactFeed									/* Feed Compact */,
+	.forceCommunityRecordListDesktop.slds-card					/* Group List */,
+	.forceChatterGroupDetailCard								/* Group Detail - About */,
+	.forceChatterAddMemberCard									/* Group Detail - Add Member */,
+	.forceChatterMessageDetailView.container				    /* Messages */,
+	.HealthCloudGAHcCommunityCareTeamList 						/* My Care Plans */,
+	.HealthCloudGAHcCommunityTaskList						    /* My Tasks */,
+	.forceCommunityUserProfileStats                          	/* My Profile */,
+	.forceCommunityUserProfileHeaderDetail .cUserProfileCon,
+	.forceCommunityUserRecognitions				  		        /* My Profile - Recognition Badges */,
+	.slds-card.slds-card_boundary.forceCommunityUserRecognitions,
+	.forceCommunityUserSettingsInternal                      	/* My Settings */,
+	.forceCommunityUserRecognitions .userRecognitionsHeader 	/* Profile - My Badges */,
+	.selfServiceSimilarArticles42 ul							/* Related Articles */,
+	.forceCommunityLwcRecordDetail .slds-card                   /* Record Details */,
+    .forceCommunityRecordListDesktop                         	/* Record List */,
+	.forceRecordLayout.slds-page-header,
+	.forceCommunityRecordListStandard.forceCommunityObjectHome,
+	.forceChatterFeedInner				                    	/* Record feed */,
+	.uiTabset--default .tabs__content							/* Tabs */,
+	.forceCommunityTopicCatalog                               	/* Topic Catelog */,
+	.forceCommunityTopicDescription.slds-card-wrapper		   	/* Topic Description */,
+	.forceCommunityTopicMetrics.slds-card-wrapper			   	/* Topic Metrics */,
+	.forceChatterStyle--default.forceChatterFeedElementFullView .cuf-element /* Question detail */,
+	.selfServiceTopicArticleList								/* Topic Details - Articles */, 
+	.forceCommunitySearch .forceSearchResultsGridView .searchScroller        /* Search */
+	{background-color:#ffffff !important; border-color:#d4d4d4 !important; border-radius:5px !important; border-style:solid !important; border-width:1px !important; padding:12px !important;}
+
+
+/* -------------- Standard component CSS overrides -------------- */
+
+/* --- Articles and Knowledge */
+/* 	Article Content - Make the content full-width */  
+.selfServiceArticleLayout.article-column {padding-left: 0px !important; padding-right: 0px !important; padding-bottom: 12px !important;}   
+/* 	Article Content - Title */
+.selfServiceArticleLayout .article-head, .selfServiceArticleLayout .breadcrumb {margin: 0px !important;}
+/* 	Article Content - Summary */
+.selfServiceArticleLayout .article-summary {margin-bottom: 18px !important; margin-top: 6px !important;}
+/*	Article Content - Hide the last updated date and term "Knowledge" */
+.selfServiceArticleHeaderDetail.meta 
+	{display:none !important;} 
+/* 	Article Content - Hide 2nd and 3rd sections of knowledge article page layout */
+.article-column .test-id__section:nth-of-type(2), .article-column .test-id__section:nth-of-type(3), .article-column .test-id__section:nth-of-type(4), .forcePageBlockItemView .tooltipIcon 
+	{display: none !important;}
+/* 	Article Content - Section padding */
+.forcePageBlockItemView.forcePageBlockItem.slds-col>.slds-form-element.slds-form-element_readonly {padding-bottom: 12px !important;}
+/* 	Article Content - Section titles */
+.selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__field-label, .selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__grouped-field-label-icon {
+    font-size: .8rem !important; font-weight: 400 !important; margin-bottom: 12px !important;}
+/* 	Article Content - Reset font size
+   	NOTE: This is done to display a consistant font size without any unwanTed overrides. */
+.slds-rich-text-editor__textarea, .slds-rich-text-editor__output, 
+.selfServiceArticleLayout .forcePageBlockSectionView.full .test-id__field-value {font-size: initial !important;}
+/* 	Article Content - Case Deflection & Trending Articles */
+.selfServiceTopicTrendingArticles42 li>.comm-topic-trending-articles__item>a {
+    background-color: white; border-color: #D4D4D4; border-style: solid; border-width: 1px; border-radius: 5px; margin-top:18px; padding: 12px;}
+/* 	Article Content - Related Articles */
+.selfServiceSimilarArticles42 li>.comm-related-articles__item>a {padding-bottom:12px !important; padding-top:12px !important; border-width: 0px;}
+.comm-related-articles__item .slds-p-bottom_medium {word-break: normal !important;} /* Fix the word break issue */
+.comm-related-articles__item {font-size: 1rem !important;}
+/* 	Article Content - Top Articles by Topic
+   	This is setup for 3 topics, change to 50% for two topics per row */
+.forceCommunityTopArticleList .singleListContainer {padding-bottom: 0px !important; width: 33% !important}
+/* 	Article Content Mobile - Top Articles by Topic */
+@media only screen and (max-width: 480px) {.forceCommunityTopArticleList .singleListContainer {padding-bottom: 12px !important; width: 100% !important}}
+/* Topic Details FAQs section */
+.selfServiceBaseArticleList .article-list {margin-top:0px !important; margin-bottom:12px !important;}
+.selfServiceTopicArticleList .selfServiceArticleListItem {padding-top: 0px; padding-bottom: 24px;}
+/* --- End Articles and Knowledge --- */
+
+
+/* --- Contact Support - Case deflection */
+.slds-align_absolute-center.comm-deflection-tracking__buttons {padding-top:12px;}
+.slds-align_absolute-center.comm-deflection-tracking {margin-top:64px;}
+/* Contact Support - Support Form */
+.forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete, .forceSearchInputLookupDesktop.uiInput .uiInputTextForAutocomplete:focus {background: white !important;}
+
+/* -- Events calendar background */
+.fc.fc-ltr.fc-unthemed {background-color: white;}
+.noHeaderBorder[cccalendar-cceventDetails_cceventDetails] {padding-bottom: 0px;}
+
+/* --- Featured Topics */
+.forceTopicFeaturedTopics, .topicLabel {font-size:1.3rem !important; font-weight:400 !important;}
+.forceTopicFeaturedTopicItem.topicItem {padding:6px !important;}
+
+/* --- Feed Compact */
+.cuf-retryPanel.forceChatterCompactFeed {display:none;}
+
+/* --- Group Banner */
+.forceCommunityGroupHighlightStencilNapili.forceRecordLayout {background-color : #ffffff;}
+
+/* --- Group Details */
+.forceChatterOutputDescription .gxmorelink {display: none !important;}
+.forceChatterOutputInformationBody.gxmorelink {display: none !important;}
+.forceDetailPanelDesktop.slds-card {padding:0px !important;}
+
+/* --- Groups Tiles */
+.forceChatterGroupTileTemplate {border-color:#e8e8e8;  border-radius:5px; border-style:solid; border-width:1px; margin:6px; width:32%}
+/* Make the group list full width (non-mobile only) */
+@media only screen and (min-width: 768px)
+{.forceChatterObjectHomeTileView section {width:100% !important;}
+}
+
+/* --- Header */
+/* Remove the Home nav link (NOTE: comment out or delete to show the Home link) */
+.forceCommunityThemeNav .comm-navigation__top-level-item.mainNavItem:first-child,
+.horizontalMenuItemContainer[community_navigation-multiLevelNavigation_multiLevelNavigation]:first-child,
+.horizontalMenuItemContainer:first-child {padding-left: 0; display: none;}
+/* Menu Item font size */
+.horizontalMenuItem {font-size: 1rem !important;}  
+/* Make the User Profile Icon larger */
+.forceCommunityThemeProfileMenu .profile-icon {width: 40px !important; height: 40px !important;}
+.comm-user-profile-menu .slds-avatar {width: 40px !important; height: 40px ;}
+
+/* --- HERO */
+/* Title */
+.forceCommunityThemeHeroBase .contentTitle {font-size: 3rem !important; font-weight: 400 !important;}
+/* Caption */
+.forceCommunityThemeHeroBase .contentCaption {font-size: 1.2rem !important; font-weight: 400 !important;}
+/* Search region bottom margin */
+.forceCommunityThemeHeroStarter .searchRegion {margin-bottom: -12px !important;}
+
+/* --- Login - Form width to 100% */
+.salesforceIdentityLoginForm2 .inputBox {width: 90% !important;}
+
+/* --- My Setting hide top row */
+.forceCommunityUserSettingsCustomizable .row:first-child {display:none;}
+
+/* Record Banner */
+.forceHighlightsStencilDesktop .slds-page-header__detail-row {background-color:rgba(255,255,255,0) !important}
+
+/* --- Record List component reset title */
+.forceCommunityRecordListStandard .listTitle {text-transform: revert !important;}
+
+/* --- Search Results */
+/* Dicussion results background */
+.forceCommunitySearch .compactFeed.forceChatterCompactFeed {background-color : #ffffff !important;} 
+/* Search results text size above filters */    
+.forceSearchScopesList.scrollerWrapper>.slds-nav-vertical__title {display:none;}
+
+/* --- Tabs */
+.tabHeader {font-size: 1.2rem !important;}
+.forceCommunityTabset {background-color: rgba(255,255,255,0) ; min-height: 282px;}
+
+/* --- Tile Menu font size */
+.comm-tile-menu__item-title {font-size:1.6rem !important;}
+
+/* --- Topic Catelog */
+.forceCommunityTopicCatalog .topicHierarchy-topBox {border-width: 0px !important; margin-left:12px;}
+.forceCommunityTopicCatalog .topicHierarchy-top {font-weight: 400 !important;}
+
+/* --- User Profile */
+.forceCommunityUserProfileBody .cUserProfileCon {margin-top:0px !important; padding-top:0px !important; padding-left:0px !important; padding-right:0px !important; padding-bottom:0px !important;}
+.forceCommunityUserProfileBody .cUserProfileDetailCon.large.fullwidth {padding-bottom: 0px; padding-left: 0px; padding-right: 0px;}
+
+/* -------------- CSS for HTML COMPONENTS -------------- */
+
+/* Alerts HTML */
+.custom-alerts {background-color:#ffffff; border-color:#e7e9eb; border-radius:5px; border-style: solid; border-width:1px; padding:12px;}
+
+/* --- Footer  */
+.footer-fullwidth {background-color: #7E7E7E; padding:6px; width: 100%;} 
+.footer-maxwidth {margin: auto; max-width: 1240px; padding: 18px 0px 18px 0px;}
+.footer-text {color: #f0f0f0 !important;}
+.footer-text a:link {color: #f0f0f0; text-decoration: none;}
+.footer-spacer {color: #A9A9A9 } 
+/* Footer Desktop */
+.footer-center {text-align: center;}
+.footer-left {text-align:left;}
+.footer-right {text-align: right;}
+/* FOOTER Tablet and mobile */
+@media only screen and (max-width: 768px)
+{.footer-left {text-align: center;}
+   .footer-right {text-align: center;}
+}
+
+/* --- HTML icon styling */
+.icon-style {color: #191919 !important;}
+
+/* --- Profile Image title */
+.profile-title {justify-content: center; margin-top:-24px;}
+
+/* --- Section titles. To change the alignment, set justify-content, or change the class to section-title-center */
+.section-title {justify-content: flex-start; margin-bottom:-12px;}
+.section-title-center {justify-content: center; margin-bottom:-12px;}
+
+/* --- Spacing on desktop */
+.spacing-comp {margin-top:46px;}
+@media only screen and (max-width: 768px)
+{.spacing-comp {margin-top:0px;}
+}
+
+/* --- Tooltips */
+/* Tooltip container (Show on tablet/decktop and hide on smaller devices) */
+@media only screen and (min-width: 768px)
+{.custom-tooltip {display: inline-block; padding-left:2px; position: relative;}}
+@media only screen and (max-width: 767px)
+{.custom-tooltip {display: none;}}
+/* Tooltip text */
+.custom-tooltip .tooltiptext {bottom: 120%; left:-80%; min-width:320px; opacity: 0;  position:absolute; transition:opacity 0.3s; visibility:hidden;}
+/* Show the tooltip text when you mouse over the tooltip container */
+.custom-tooltip:hover .tooltiptext {opacity: 1; visibility: visible;}
