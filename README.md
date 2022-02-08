@@ -9,7 +9,7 @@ This package contains:
 * **Site Starter (AURA) Theme**
     This theme is used to update existing site header styles and theme layouts.
    
-* **Page Layouts**
+* **Page Templates**
     When creating a page or new page variation, some page templates are included. For non-object and non-CMS page types, a page layout called **Template** is included to get a new page started. 
 
 
