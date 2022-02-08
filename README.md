@@ -1,6 +1,19 @@
 # Experience Cloud Site Starter (AURA)
 The Experience Cloud Site Starter (AURA) is a mobile 1st site design for a self-service site using best practices (e.g., flexible pages), using no-code, low-code,  CSS, and HTML components.
 
+
+
+
+<a target='_blank' href="https://google.com">
+
+    [Stackoverflow](http://stackoverflow.com){:target="blank"}
+[Go to this page](http://somelink.com/?target=_blank)
+[Google](https://google.com" target="_blank)
+[Link](https://example.org/ "title" target="_blank")
+<a href="https://example.org/" rel="nofollow" title="title&quot; target=&quot;_blank">Link</a>
+    
+
+
 This package contains:
 * **Site Starter (AURA) Template**
     This template provides a clean theme (minimal pages) using flexible layouts for all pages.
@@ -65,11 +78,3 @@ The package also allows for updating an existing site for theme, page templates,
 ## For More Information 
 - See [Experience Cloud - Site Starter (AURA) Documentation](https://salesforce.quip.com/PjCIAaDQWNGY)
 - [Watch the overview video](https://salesforce.vidyard.com/watch/dBMyA254f61Zr5dPWcTta9?)
-
-
-
-[Stackoverflow](http://stackoverflow.com){:target="blank"}
-[Go to this page](http://somelink.com/?target=_blank)
-[Google](https://google.com" target="_blank)
-[Link](https://example.org/ "title" target="_blank")
-<a href="https://example.org/" rel="nofollow" title="title&quot; target=&quot;_blank">Link</a>
