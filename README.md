@@ -64,3 +64,4 @@ The package also allows for updating an existing site for theme, page templates,
 
 ## For More Information 
 - See [Experience Cloud - Site Starter (AURA) Documentation](https://salesforce.quip.com/PjCIAaDQWNGY)
+- [Watch the overview video](https://secure.vidyard.com/organizations/1222/embed_select/dBMyA254f61Zr5dPWcTta9)
