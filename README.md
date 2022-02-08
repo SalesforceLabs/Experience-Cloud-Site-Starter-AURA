@@ -68,4 +68,4 @@ The package also allows for updating an existing site for theme, page templates,
 
 
 
-[Stackoverflow](http://stackoverflow.com){:target="_blank"}
+[Stackoverflow](http://stackoverflow.com){:target="blank"}
