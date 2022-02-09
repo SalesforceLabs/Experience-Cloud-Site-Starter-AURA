@@ -37,12 +37,14 @@ This package contains:
 
 ## Site Configuration
 
-1. Go to Experience Builder and configure the themes’: color, images, font, and theme settings.
-   **Note**: CSS can change from release to release and has the potential to visually impact other components within the Experience Cloud site. 
+1. Go to Experience Builder and configure the themes’s color, images, font, and theme settings.
     
 2. Update the Site CSS Experience Builder / Theme / Edit CSS (from the pull-down menu). 
    Copy the CSS from [CSS-Site-Starter-CSS.css](./CSS-Site-Starter.css) and paste it into the sites’ CSS.
-   The site CSS is reviewed for each release, but is **supplied as-is**.
+    
+    **Note**: 
+    - CSS can change from release to release and potential can visually impact other components within the Experience Cloud site. 
+    - The site CSS is reviewed for each release, but is **supplied as-is**.
     
 3. Add to the site’s Head Markup (Experience Builder / Settings / Advanced / Edit Head Markup).
    Copy the Head Markup from [Head-Markup.html](./Head-Markup.html) and paste it into the sites’ Head Markup.
