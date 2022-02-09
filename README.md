@@ -1,6 +1,5 @@
 # Experience Cloud Site Starter (AURA)
 The Experience Cloud Site Starter (AURA) is a mobile 1st site design for a self-service site using best practices (e.g., flexible pages), using no-code, low-code,  CSS, and HTML components.
-Version: Spring '22 V1.5
 
 This package contains:
 * **Site Starter (AURA) Template**
@@ -8,7 +7,7 @@ This package contains:
     Templates are selected when creating a new site or changing the Template. This will overwrite all site pages and the theme. 
 
 * **Site Starter (AURA) Theme**
-    This theme is used to update existing site header styles and theme layouts.
+    Use to update an existing sites' header styles, hero, and branding.
    
 * **Page Templates**
     When creating a page or new page variation, some page templates are included. For non-object and non-CMS page types, a page layout called **Template** is included to get a new page started. 
